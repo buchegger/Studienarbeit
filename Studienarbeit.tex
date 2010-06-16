@@ -1,0 +1,65 @@
+\documentclass[a4paper,pdftex,oneside,10pt,mathsans]{scrartcl} %,fleqn
+
+% Wir geben alles im UTF-8 Zeichensatz ein (alles andere ist Unfug!)
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{ngerman}
+
+\newcommand{\Autoren}{\href{buchegger.uni@gmail.com}{Philipp Buchegger}}
+
+\newcommand{\Gruppe}{Studenarbeit}
+\newcommand{\Thema}{Disks}
+\newcommand{\Titel}{Binärsternsysteme}
+\newcommand{\Datum}{Tübingen, den \today}
+\newcommand{\Schluesselwoerter}{}
+
+\input{HeaderUTF8.tex}
+
+\setlength{\baselineskip}{1.25\baselineskip}
+\setlength{\parskip}{\baselineskip}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+\setlength{\plitemsep}{0.3\baselineskip}
+
+\setlength{\abovedisplayskip}{0.5\baselineskip}
+\setlength{\abovedisplayshortskip}{0pt}
+\setlength{\belowdisplayskip}{0.5\baselineskip}
+\setlength{\belowdisplayshortskip}{0.5\baselineskip}
+
+\newcommand{\super}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\sub}[1]{\ensuremath{_{\textnormal{#1}}}}
+
+\newcommand{\e}{\mathrm e}
+
+\tableofcontents 
+\section{Einleitung}
+\section{FARGO}
+\subsection{FARGO}
+\subsection{FARGO-Erweiterung: Planet-Eccentricity}
+Anstatt einer globalen Exzentrizität aller Planeten kann man in der Konfigurationsdatei die Exzentrizität eines jeden Planeten bzw. Binärsterns angeben. Die Planeten/Binärsterne starten in der Apoapsis, also dem Punkt mit der größten Entfernung zum Hauptkörper. 
+\subsection{FARGO-Erweiterung: Disk-Eccentricity}
+\subsection{CVNR}
+Der FARGO-Code hat eine künstliche Viskosität in den Druck-Quelltermen. Um einen Vergleich mit RH2D und NIRVANA durchführen zu können, kann man jetzt die künstliche Viskosität in der Variable CVNR konfigurieren. Der Standardwert ist 1.41
+\subsection{Boundary-Conditions}
+\begin{itemize}
+\item Open
+\item Reflecting
+\end{itemize}
+\section{Potential-Smoothing}
+Wenn wir eine Akkretionsscheibe in einem Binärsternsystem betrachten, müssen wir, um sinnvolle Ergebnisse zu erhalten, den Binärstern anders betrachten als einen Planeten: Die Entfernung eines Planeten ist viel geringer. Das Potentia
+\section{$\gamma$ Cep}
+\section{Marzari Paper}
+\section{Vergleich FARGO, Nirvana und RH2D}
+\begin {figure}
+	\begin{center}
+		\input{diskeccentricity}
+	\end{center}
+\end {figure}
+\section{Parameterstudie: h, q}
+Wir variieren die Parameter Aspectratio H/r, also die Dicke der Disk und den Parameter MassRatio q, das Massenverhältnis des Binärsterns zu dem Primärstern. Ziel ist es, die Wachstumsrate, sowie den Wert der Exzentrizität zu bestimmen. Als Randbedingungen verwenden wir innen reflektierende und aussen offene.
+Wir betrachten auch die Präzession der Disk
+\subsection{AspectRatio}
+\subsection{MassRatio}
+
+\end{document}
+

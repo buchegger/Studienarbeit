@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Einleitung}{1}{section.1}
+\contentsline {section}{\numberline {2}FARGO}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}FARGO}{1}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}FARGO-Erweiterung: Planet-Eccentricity}{1}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}FARGO-Erweiterung: Disk-Eccentricity}{2}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}CVNR}{2}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Boundary-Conditions}{2}{subsection.2.5}
+\contentsline {section}{\numberline {3}Potential-Smoothing}{2}{section.3}
+\contentsline {section}{\numberline {4}$\gamma $ Cep}{2}{section.4}
+\contentsline {section}{\numberline {5}Marzari Paper}{2}{section.5}
+\contentsline {section}{\numberline {6}Vergleich FARGO, Nirvana und RH2D}{2}{section.6}
+\contentsline {section}{\numberline {7}Parameterstudie: h, q}{2}{section.7}
+\contentsline {subsection}{\numberline {7.1}AspectRatio}{2}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}MassRatio}{2}{subsection.7.2}
