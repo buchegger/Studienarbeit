@@ -1,14 +1,23 @@
-\contentsline {section}{\numberline {1}Einleitung}{1}{section.1}
-\contentsline {section}{\numberline {2}FARGO}{1}{section.2}
-\contentsline {subsection}{\numberline {2.1}FARGO}{1}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}FARGO-Erweiterung: Planet-Eccentricity}{1}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}FARGO-Erweiterung: Disk-Eccentricity}{2}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}CVNR}{2}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Boundary-Conditions}{2}{subsection.2.5}
-\contentsline {section}{\numberline {3}Potential-Smoothing}{2}{section.3}
-\contentsline {section}{\numberline {4}$\gamma $ Cep}{2}{section.4}
-\contentsline {section}{\numberline {5}Marzari Paper}{2}{section.5}
-\contentsline {section}{\numberline {6}Vergleich FARGO, Nirvana und RH2D}{2}{section.6}
-\contentsline {section}{\numberline {7}Parameterstudie: h, q}{2}{section.7}
-\contentsline {subsection}{\numberline {7.1}AspectRatio}{2}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}MassRatio}{2}{subsection.7.2}
+\contentsline {section}{\numberline {1}Einleitung}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Nachweismethoden von Exoplaneten}{2}{subsection.1.1}
+\contentsline {section}{\numberline {2}FARGO}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}FARGO-Modifikationen}{4}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}FARGO-Erweiterung: Planet-Eccentricity und Sterne als Sekund\IeC {\"a}robjekte}{4}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}FARGO-Erweiterung: Disk-Eccentricity}{4}{subsubsection.2.1.2}
+\contentsline {subsection}{\numberline {2.2}CVNR}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Boundary-Conditions}{5}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Potential-Smoothing}{8}{subsection.2.4}
+\contentsline {section}{\numberline {3}Modellierung exzentrischer Bin\IeC {\"a}rsternsysteme}{8}{section.3}
+\contentsline {subsection}{\numberline {3.1}$\gamma $ Cephei}{8}{subsection.3.1}
+\contentsline {section}{\numberline {4}Vergleich FARGO, NIRVANA und RH2D}{10}{section.4}
+\contentsline {section}{\numberline {5}Modellierung nicht-exzentrischer Bin\IeC {\"a}rsternsysteme: Parameterstudie: h, q}{10}{section.5}
+\contentsline {subsubsection}{\numberline {5.0.1}Lagrange-Punkte}{12}{subsubsection.5.0.1}
+\contentsline {subsubsection}{Exzentrizit\IeC {\"a}t h = 0.05}{15}{section*.2}
+\contentsline {subsubsection}{Exzentrizit\IeC {\"a}t h = 0.04}{17}{section*.3}
+\contentsline {subsubsection}{Exzentrizit\IeC {\"a}t h = 0.03}{17}{section*.4}
+\contentsline {subsection}{\numberline {5.1}Periastron}{19}{subsection.5.1}
+\contentsline {subsubsection}{Periastron h = 0.05}{19}{section*.5}
+\contentsline {subsubsection}{Periastron h = 0.04}{21}{section*.6}
+\contentsline {subsubsection}{Periastron h = 0.03}{23}{section*.7}
+\contentsline {section}{\numberline {6}Zusammenfassung}{26}{section.6}
+\contentsline {section}{\numberline {7}Appendix}{26}{section.7}

@@ -1,33 +1,41 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.2.23)  16 JUN 2010 12:42
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.7.1)  2 AUG 2010 12:39
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **Studienarbeit.tex
-(C:\Users\phil\Documents\Studienarbeit.tex
+(./Studienarbeit.tex
 LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
-rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\koma-script\scrartcl.cls
-Document Class: scrartcl 2010/02/15 v3.05 KOMA-Script document class (article)
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\koma-script\scrkbase.sty
-Package: scrkbase 2010/02/15 v3.05 KOMA-Script package (KOMA-Script-dependent b
-asics and keyval usage)
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/koma-script/scrartcl.cls
+Document Class: scrartcl 2009/07/24 v3.04a KOMA-Script document class (article)
 
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\koma-script\scrbase.sty
-Package: scrbase 2010/02/15 v3.05 KOMA-Script package (KOMA-Script-independent 
+(/usr/share/texmf-texlive/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2009/07/24 v3.04a KOMA-Script package (KOMA-Script-dependent 
 basics and keyval usage)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\keyval.sty"
+(/usr/share/texmf-texlive/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2009/07/24 v3.04a KOMA-Script package (KOMA-Script-independent
+ basics and keyval usage)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\koma-script\scrlfile.sty
+(/usr/share/texmf-texlive/tex/latex/koma-script/scrlfile.sty
 Package: scrlfile 2009/03/25 v3.03 KOMA-Script package (loading files)
 
 Package scrlfile, 2009/03/25 v3.03 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
-)))
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\koma-script\tocbasic.sty
-Package: tocbasic 2010/01/05 v3.04b KOMA-Script package (handling toc-files)
+))) (/usr/share/texmf-texlive/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2009/06/08 v3.03b KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
@@ -40,7 +48,7 @@ Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             for `lot' on input line 117.
 Class scrartcl Info: You've used standard option `oneside'.
 (scrartcl)           This is correct!
-(scrartcl)           Internally I'm using `twoside=false'.
+(scrartcl)           Internaly I'm using `twoside=false'.
 (scrartcl)           If you'd like to set the option with \KOMAoptions,
 (scrartcl)           you'd have to use `twoside=false' there
 (scrartcl)           instead of `oneside', too.
@@ -52,13 +60,14 @@ Package scrartcl Info: You've used obsolete option `10pt'.
 Class scrartcl Info: File `scrsize10pt.clo' used to setup font sizes on input l
 ine 1171.
 
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\koma-script\scrsize10pt.clo
-File: scrsize10pt.clo 2010/02/15 v3.05 KOMA-Script font size class option (10pt
+(/usr/share/texmf-texlive/tex/latex/koma-script/scrsize10pt.clo
+File: scrsize10pt.clo 2009/07/24 v3.04a KOMA-Script font size class option (10p
+t)
 )
-) (C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\koma-script\typearea.sty
-Package: typearea 2010/02/15 v3.05 KOMA-Script package (type area)
+(/usr/share/texmf-texlive/tex/latex/koma-script/typearea.sty
+Package: typearea 2009/07/24 v3.04a KOMA-Script package (type area)
 
-Package typearea, 2010/02/15 v3.05 KOMA-Script package (type area)
+Package typearea, 2009/07/24 v3.04a KOMA-Script package (type area)
                   Copyright (C) Frank Neukam, 1992-1994
                   Copyright (C) Markus Kohm, 1994-
 
@@ -66,19 +75,19 @@ Package typearea, 2010/02/15 v3.05 KOMA-Script package (type area)
 \ta@div=\count79
 Package typearea Info: You've used standard option `a4paper'.
 (typearea)             This is correct!
-(typearea)             Internally I'm using `paper=a4'.
+(typearea)             Internaly I'm using `paper=a4'.
 (typearea)             If you'd like to set the option with \KOMAoptions,
 (typearea)             you'd have to use `paper=a4' there
 (typearea)             instead of `a4paper', too.
 Package typearea Info: You've used standard option `pdftex'.
 (typearea)             This is correct!
-(typearea)             Internally I'm using `pagesize=pdftex'.
+(typearea)             Internaly I'm using `pagesize=pdftex'.
 (typearea)             If you'd like to set the option with \KOMAoptions,
 (typearea)             you'd have to use `pagesize=pdftex' there
 (typearea)             instead of `pdftex', too.
 Package typearea Info: You've used standard option `oneside'.
 (typearea)             This is correct!
-(typearea)             Internally I'm using `twoside=false'.
+(typearea)             Internaly I'm using `twoside=false'.
 (typearea)             If you'd like to set the option with \KOMAoptions,
 (typearea)             you'd have to use `twoside=false' there
 (typearea)             instead of `oneside', too.
@@ -115,26 +124,26 @@ Package typearea Info: These are the values describing the layout:
 \c@figure=\count86
 \c@table=\count87
 \bibindent=\dimen102
-) ("C:\Program Files\MiKTeX 2.8\tex\latex\base\fontenc.sty"
+) (/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\t1enc.def"
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\inputenc.sty"
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\utf8.def"
+(/usr/share/texmf-texlive/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\t1enc.dfu"
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -284,7 +293,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\ot1enc.dfu"
+(/usr/share/texmf-texlive/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -315,7 +324,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\omsenc.dfu"
+(/usr/share/texmf-texlive/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -339,76 +348,69 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\german\ngerman.sty
-v2.5e 1998-07-08
+(/usr/share/texmf-texlive/tex/generic/german/ngerman.sty v2.5e 1998-07-08
 Package: ngerman 1998/07/08 v2.5e Support for writing german texts (br)
 \grmnU@D=\dimen103
-ngerman -- \language number for naustrian undefined, default 4 used.
-) (C:\Users\phil\Documents\HeaderUTF8.tex
-("C:\Program Files\MiKTeX 2.8\tex\latex\ae\ae.sty"
+ngerman -- \language number for naustrian undefined, default 17 used.
+)
+(./HeaderUTF8.tex (/usr/share/texmf-texlive/tex/latex/ae/ae.sty
 Package: ae 2001/02/12 1.3 Almost European Computer Modern
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\fontenc.sty"
+(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\t1enc.def"
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 )
 LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\ae\t1aer.fd"
+(/usr/share/texmf-texlive/tex/latex/ae/t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))
-("C:\Program Files\MiKTeX 2.8\tex\generic\babel\babel.sty"
+(/var/lib/texmf/tex/generic/babel/babel.sty
 Package: babel 2008/07/06 v3.8l The Babel package
 
-*************************************
-* Local config file bblopts.cfg used
-*
-("C:\Program Files\MiKTeX 2.8\tex\latex\00miktex\bblopts.cfg"
-File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
-)
-("C:\Program Files\MiKTeX 2.8\tex\generic\babel\english.ldf"
+(/usr/share/texmf-texlive/tex/generic/babel/english.ldf
 Language: english 2005/03/30 v3.3o English support from the babel system
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\babel\babel.def"
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
 File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen104
 ))
-("C:\Program Files\MiKTeX 2.8\tex\generic\babel\ngermanb.ldf"
+(/usr/share/texmf-texlive/tex/generic/babel/ngermanb.ldf
 Language: ngermanb 2008/07/06 v2.6n new German support from the babel system
 ))
-("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\graphicx.sty"
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\graphics.sty"
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\trig.sty"
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\pdftex-def\pdftex.def"
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
 \Gread@gobject=\count89
 ))
 \Gin@req@height=\dimen105
 \Gin@req@width=\dimen106
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\geometry\geometry.sty"
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
 Package: geometry 2008/12/21 v4.2 Page Geometry
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\ifpdf.sty"
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in pdf mode detected.
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\ifvtex.sty"
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
 Package ifvtex Info: VTeX not detected.
 )
@@ -421,25 +423,25 @@ Package ifvtex Info: VTeX not detected.
 \Gm@even@mp=\dimen110
 \Gm@dimlist=\toks17
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amsmath.sty"
+(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip47
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amstext.sty"
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amsgen.sty"
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks18
 \ex@=\dimen111
 ))
-("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amsbsy.sty"
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen112
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amsopn.sty"
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count93
@@ -480,7 +482,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\ams\classes\amsthm.sty"
+(/usr/share/texmf-texlive/tex/latex/amscls/amsthm.sty
 Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks23
 \thm@bodyfont=\toks24
@@ -492,36 +494,36 @@ Package: amsthm 2004/08/06 v2.20
 \thm@headsep=\skip52
 \dth@everypar=\toks28
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\ams\math\amscd.sty"
-Package: amscd 1999/11/29 v2.0
+(/usr/share/texmf-texlive/tex/latex/amsmath/amscd.sty
+Package: amscd 1999/11/29 v1.2d
 \athelp@=\toks29
 \minaw@=\dimen120
 \bigaw@=\dimen121
 \minCDarrowwidth=\dimen122
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\amsfonts\amsfonts.sty"
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\amsfonts\amssymb.sty"
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2009/06/22 v3.00
 )
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\units\units.sty
+(/usr/share/texmf-texlive/tex/latex/units/units.sty
 Package: units 1998/08/04 v0.9b Typesetting units
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\ifthen.sty"
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\units\nicefrac.sty
+(/usr/share/texmf-texlive/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \L@UnitsRaiseDisplaystyle=\skip53
 \L@UnitsRaiseTextstyle=\skip54
 \L@UnitsRaiseScriptstyle=\skip55
 ))
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\fancyhdr\fancyhdr.sty
+(/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip56
 \f@ncyO@elh=\skip57
 \f@ncyO@erh=\skip58
@@ -532,29 +534,29 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \f@ncyO@olf=\skip63
 \f@ncyO@orf=\skip64
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\oberdiek\pdflscape.sty"
+(/usr/share/texmf-texlive/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2008/08/11 v0.10 Landscape pages in PDF (HO)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\graphics\lscape.sty"
+(/usr/share/texmf-texlive/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\ifxetex\ifxetex.sty"
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
 ))
-("C:\Program Files\MiKTeX 2.8\tex\latex\thumbpdf\thumbpdf.sty"
+(/usr/share/texmf-texlive/tex/generic/thumbpdf/thumbpdf.sty
 Package: thumbpdf 2008/04/16 v3.10 Inclusion of thumbnails (HO)
 
 
 Package thumbpdf Warning: Thumbnail data file `Studienarbeit.tpt' not found.
 
-) (C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\type1cm\type1cm.sty
+) (/usr/share/texmf-texlive/tex/latex/type1cm/type1cm.sty
 Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, p
 atched RF)
 )
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\pdfpages\pdfpages.sty
-Package: pdfpages 2010/01/12 v0.4j Insert pages of external PDF documents (AM)
+(/usr/share/texmf-texlive/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2009/02/07 v0.4g Insert pages of external PDF documents (AM)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\tools\calc.sty"
+(/usr/share/texmf-texlive/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count105
 \calc@Bcount=\count106
@@ -567,47 +569,27 @@ LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count107
 \calc@Cskip=\skip67
 )
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\eso-pic\eso-pic.sty
-Package: eso-pic 2009/10/07 v2.0a eso-pic (RN)
+(/usr/share/texmf-texlive/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2006/07/14 v1.1d eso-pic (RN)
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\atbegshi.sty"
-Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
-
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+(/usr/share/texmf-texlive/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\xcolor\xcolor.sty
-Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
-
-("C:\Program Files\MiKTeX 2.8\tex\latex\00miktex\color.cfg"
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
-Package xcolor Info: Model `RGB' extended on input line 1353.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
-))
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\pdfpages\pppdftex.def
-File: pppdftex.def 2010/01/12 v0.4j Pdfpages driver for pdfTeX (AM)
+(/usr/share/texmf-texlive/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2009/02/07 v0.4g Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box29
 \AM@toc@title=\toks30
 \c@AM@survey=\count108
 \AM@templatesizebox=\box30
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\tools\verbatim.sty"
+(/usr/share/texmf-texlive/tex/latex/tools/verbatim.sty
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks31
 \verbatim@line=\toks32
 \verbatim@in@stream=\read1
 )
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\listings\listings.sty
+(/usr/share/texmf-texlive/tex/latex/listings/listings.sty
 \lst@mode=\count109
 \lst@gtempboxa=\box31
 \lst@token=\toks33
@@ -621,24 +603,24 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \lst@lineno=\count114
 \lst@maxwidth=\dimen128
 
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\listings\lstmisc.sty
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 \c@lstnumber=\count115
 \lst@skipnumbers=\count116
 \lst@framebox=\box32
 )
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\listings\listings.cfg
+(/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
 File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\titling\titling.sty
+(/usr/share/texmf-texlive/tex/latex/titling/titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmarkwidth=\skip68
 \thanksmargin=\skip69
 \droptitle=\skip70
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\textcomp.sty"
+(/usr/share/texmf-texlive/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -653,12 +635,12 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\ts1enc.def"
+(/usr/share/texmf-texlive/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\ts1enc.dfu"
+(/usr/share/texmf-texlive/tex/latex/base/ts1enc.dfu
 File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -779,8 +761,8 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
 )
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\nonfloat\nonfloat.sty)
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\booktabs\booktabs.sty
+(/usr/share/texmf-texlive/tex/latex/nonfloat/nonfloat.sty)
+(/usr/share/texmf-texlive/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen129
 \lightrulewidth=\dimen130
@@ -800,15 +782,15 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count120
 \@thisrulewidth=\dimen141
 )
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\eqlist\eqlist.sty
+(/usr/share/texmf-texlive/tex/latex/eqlist/eqlist.sty
 eqlist.sty by M. Vaeth: Revision 2.1
 Package: eqlist 2002/08/15 v2.1
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\eqparbox\eqparbox.sty
-Package: eqparbox 2010/01/01 v3.1 Create equal-widthed boxes
+(/usr/share/texmf-texlive/tex/latex/eqparbox/eqparbox.sty
+Package: eqparbox 2004/08/02 v2.1 Create equal-widthed parboxes
 \eqp@tempdima=\skip71
 \eqp@tempdimb=\skip72
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\tools\array.sty"
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen142
 \extrarowheight=\dimen143
@@ -818,7 +800,7 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 ))
 \eql@cnt=\count121
 )
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\paralist\paralist.sty
+(/usr/share/texmf-texlive/tex/latex/paralist/paralist.sty
 Package: paralist 2002/03/18 v2.3b Extended list environments (BS)
 \pltopsep=\skip75
 \plpartopsep=\skip76
@@ -826,47 +808,59 @@ Package: paralist 2002/03/18 v2.3b Extended list environments (BS)
 \plparsep=\skip78
 \pl@lab=\toks35
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\hyperref\hyperref.sty"
-Package: hyperref 2009/10/19 v6.79b Hypertext links for LaTeX
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\oberdiek\hycolor.sty"
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
 Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
 O)
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\oberdiek\xcolor-patch.sty"
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
 Package: xcolor-patch 2009/10/02 xcolor patch
 ))
 \@linkdim=\dimen144
 \Hy@linkcounter=\count122
 \Hy@pagecounter=\count123
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\hyperref\pd1enc.def"
-File: pd1enc.def 2009/10/19 v6.79b Hyperref: PDFDocEncoding definition (HO)
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\etexcmds.sty"
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\00miktex\hyperref.cfg"
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\oberdiek\kvoptions.sty"
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\kvsetkeys.sty"
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
 t (HO)
 ))
 Package hyperref Info: Option `breaklinks' set `true' on input line 2864.
 Package hyperref Info: Option `unicode' set `true' on input line 2864.
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\hyperref\puenc.def"
-File: puenc.def 2009/10/19 v6.79b Hyperref: PDF Unicode definition (HO)
+(/usr/share/texmf-texlive/tex/latex/hyperref/puenc.def
+File: puenc.def 2009/10/09 v6.79a Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
@@ -883,33 +877,33 @@ Package hyperref Info: Backreferencing ON on input line 2993.
 
 Implicit mode ON; LaTeX internals redefined
 Package hyperref Info: Bookmarks ON on input line 3191.
-("C:\Program Files\MiKTeX 2.8\tex\latex\hyperref\backref.sty"
+(/usr/share/texmf-texlive/tex/latex/hyperref/backref.sty
 Package: backref 2006/09/05 v1.28 Bibliographical back referencing
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\ltxmisc\url.sty"
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 3428.
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\bitset.sty"
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
 Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\intcalc.sty"
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
 Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\bigintcalc.sty"
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
 Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\pdftexcmds.sty"
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
  (HO)
 
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\ifluatex.sty"
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-("C:\Program Files\MiKTeX 2.8\tex\generic\oberdiek\ltxcmds.sty"
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
 )
 )
@@ -928,16 +922,20 @@ Package hyperref Info: backreferencing ON on input line 4390.
 Package hyperref Info: Link coloring ON on input line 4395.
 Package hyperref Info: Link coloring with OCG OFF on input line 4402.
 Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
 \Hy@abspage=\count125
 \c@Item=\count126
 \c@Hfootnote=\count127
 )
 *hyperref using driver hpdftex*
-("C:\Program Files\MiKTeX 2.8\tex\latex\hyperref\hpdftex.def"
-File: hpdftex.def 2009/10/19 v6.79b Hyperref driver for pdfTeX
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
 \Fld@listcount=\count128
 )
-("C:\Program Files\MiKTeX 2.8\tex\latex\tools\multicol.sty"
+(/usr/share/texmf-texlive/tex/latex/tools/multicol.sty
 Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \c@tracingmulticols=\count129
 \mult@box=\box33
@@ -984,50 +982,50 @@ Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \mult@nat@firstbox=\box57
 \colbreak@box=\box58
 )
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\wasysym\wasysym.sty
+(/usr/share/texmf-texlive/tex/latex/wasysym/wasysym.sty
 Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
 \symwasy=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
 )
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\expdlist\expdlist.sty
+(/usr/share/texmf-texlive/tex/latex/expdlist/expdlist.sty
 Document Substyle `EXPDLIST'. Released 22.09.1999 (V 2.4)
 English Documentation  22.09.99
 \listpartsep=\skip81
-) (C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\ellipsis\ellipsis.sty
+) (/usr/share/texmf-texlive/tex/latex/ellipsis/ellipsis.sty
 Package: ellipsis 2004/9/28 v1.6 ellipsis: fixes spacing around \protect \globa
 l \let \T1\textellipsis .\kern \fontdimen 3\font .\kern \fontdimen 3\font .\ker
 n \fontdimen 3\font \T1\textellipsis 
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\tools\xspace.sty"
+(/usr/share/texmf-texlive/tex/latex/tools/xspace.sty
 Package: xspace 2006/05/08 v1.12 Space after command names (DPC,MH)
 ))
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\fixltx2e.sty"
+(/usr/share/texmf-texlive/tex/latex/base/fixltx2e.sty
 Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
 LaTeX Info: Redefining \em on input line 420.
 LaTeX Info: Redefining \textsubscript on input line 424.
 LaTeX Info: The control sequence `\[' is already robust on input line 471.
 LaTeX Info: The control sequence `\]' is already robust on input line 472.
 )
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\mparhack\mparhack.sty
+(/usr/share/texmf-texlive/tex/latex/mparhack/mparhack.sty
 Package: mparhack 2005/04/17 v1.4 (T. Sgouros and S. Ulrich)
 )
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\microtype\microtype.sty
-Package: microtype 2010/01/10 v2.4 Micro-typography with pdfTeX (RS)
+(/usr/share/texmf-texlive/tex/latex/microtype/microtype.sty
+Package: microtype 2009/03/27 v2.3d Micro-typography with pdfTeX (RS)
 \MT@toks=\toks37
 \MT@count=\count137
-LaTeX Info: Redefining \lsstyle on input line 1597.
-LaTeX Info: Redefining \lslig on input line 1597.
+LaTeX Info: Redefining \lsstyle on input line 1608.
+LaTeX Info: Redefining \lslig on input line 1608.
 \MT@outer@space=\skip82
-LaTeX Info: Redefining \textls on input line 1605.
+LaTeX Info: Redefining \textls on input line 1616.
 \MT@outer@kern=\dimen155
-LaTeX Info: Redefining \textmicrotypecontext on input line 2156.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2167.
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\microtype\microtype.cfg
-File: microtype.cfg 2010/01/10 v2.4 microtype main configuration file (RS)
+(/usr/share/texmf-texlive/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2009/03/27 v2.3d microtype main configuration file (RS)
 ))
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\textpos\textpos.sty
+(/usr/share/texmf-texlive/tex/latex/textpos/textpos.sty
 Package: textpos 2009/05/28 v1.7f
 
 Package: `textpos' 1.7f <2009 May 28>
@@ -1040,17 +1038,19 @@ Grid set 16 x 16 = 37.34424pt x 52.81541pt
 \TPboxrulesize=\dimen160
 \TP@tbargs=\toks38
 \TP@prevdepth=\dimen161
-) ("C:\Program Files\MiKTeX 2.8\tex\latex\base\makeidx.sty"
+) (/usr/share/texmf-texlive/tex/latex/base/makeidx.sty
 Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 )
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\listings\lstlang1.sty
+(/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
 
 LaTeX Warning: Unused global option(s):
     [mathsans].
 
-(C:\Users\phil\Documents\Studienarbeit.aux)
+(./Studienarbeit.aux)
+\openout1 = `Studienarbeit.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
 LaTeX Font Info:    ... okay on input line 112.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
@@ -1066,8 +1066,7 @@ LaTeX Font Info:    ... okay on input line 112.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 112.
 
-
-("C:\Program Files\MiKTeX 2.8\tex\latex\base\ts1cmr.fd"
+ (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 112.
@@ -1078,10 +1077,10 @@ LaTeX Font Info:    ... okay on input line 112.
 LaTeX Font Info:    Try loading font information for T1+aess on input line 112.
 
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\ae\t1aess.fd"
+(/usr/share/texmf-texlive/tex/latex/ae/t1aess.fd
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 )
-("C:\Program Files\MiKTeX 2.8\tex\context\base\supp-pdf.tex"
+(/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count138
 \scratchdimen=\dimen162
@@ -1134,13 +1133,14 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-\AtBeginShipoutBox=\box61
+ABD: EveryShipout initializing macros
 \c@lstlisting=\count143
 Package hyperref Info: Link coloring ON on input line 112.
-("C:\Program Files\MiKTeX 2.8\tex\latex\hyperref\nameref.sty"
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
-("C:\Program Files\MiKTeX 2.8\tex\latex\oberdiek\refcount.sty"
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count144
@@ -1148,9 +1148,11 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 LaTeX Info: Redefining \ref on input line 112.
 LaTeX Info: Redefining \pageref on input line 112.
 
-(C:\Users\phil\Documents\Studienarbeit.out)
-(C:\Users\phil\Documents\Studienarbeit.out)
+(./Studienarbeit.out) (./Studienarbeit.out)
 \@outlinefile=\write3
+\openout3 = `Studienarbeit.out'.
+
+\AtBeginShipoutBox=\box61
 LaTeX Info: Redefining \dots on input line 112.
 LaTeX Info: Redefining \microtypecontext on input line 112.
 Package microtype Info: Generating PDF output.
@@ -1162,103 +1164,357 @@ Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
+Package color Info: Redefining color red on input line 119.
 
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\listings\lstlang1.sty
+(/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\listings\lstmisc.sty
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 )
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\microtype\mt-cmr.cfg
-File: mt-cmr.cfg 2009/11/09 v2.0 microtype config. file: Computer Modern Roman 
-(RS)
+(/usr/share/texmf-texlive/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2008/02/29 v1.9a microtype config. file: Computer Modern Roman
+ (RS)
 )
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\microtype\mt-msa.cfg
+(/usr/share/texmf-texlive/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\microtype\mt-msb.cfg
+(/usr/share/texmf-texlive/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Try loading font information for U+wasy on input line 163.
 
-(C:\Users\phil\AppData\Roaming\MiKTeX\2.8\tex\latex\wasysym\uwasy.fd
+(/usr/share/texmf-texlive/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
-))
-(C:\Users\phil\Documents\Studienarbeit.toc
+)) (./Studienarbeit.toc
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
 (scrartcl)            on input line 1.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 2.
-Class scrartcl Info: You've told me to use the font selection of the element
-(scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 8.
-Class scrartcl Info: You've told me to use the font selection of the element
-(scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 9.
+(scrartcl)            on input line 3.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
 (scrartcl)            on input line 10.
 Class scrartcl Info: You've told me to use the font selection of the element
 (scrartcl)           `sectioning' that is an alias of element `disposition'
-(scrartcl)            on input line 11.
+(scrartcl)            on input line 12.
+Class scrartcl Info: You've told me to use the font selection of the element
+(scrartcl)           `sectioning' that is an alias of element `disposition'
+(scrartcl)            on input line 13.
+Class scrartcl Info: You've told me to use the font selection of the element
+(scrartcl)           `sectioning' that is an alias of element `disposition'
+(scrartcl)            on input line 22.
+Class scrartcl Info: You've told me to use the font selection of the element
+(scrartcl)           `sectioning' that is an alias of element `disposition'
+(scrartcl)            on input line 23.
 )
 \tf@toc=\write4
- [1{C:/Users/phil/AppData/Local/MiKTeX/2.8/pdftex/config/pdftex.map}
+\openout4 = `Studienarbeit.toc'.
+
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+aess on input line 45.
+LaTeX Font Info:    Try loading font information for TS1+aess on input line 57.
 
-LaTeX Font Info:    No file TS1aess.fd. on input line 45.
+LaTeX Font Info:    No file TS1aess.fd. on input line 57.
 
 
 LaTeX Font Warning: Font shape `TS1/aess/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textbullet' on input line 45.
+(Font)              for symbol `textbullet' on input line 57.
 
+[2] [3]
+Overfull \hbox (37.49817pt too wide) in paragraph at lines 98--103
+[][] 
+ []
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 50.
+[4] (./diskecc1D.tex <diskecc1D.pdf, id=167, 361.35pt x 252.945pt>
+File: diskecc1D.pdf Graphic file (type pdf)
 
+<use diskecc1D.pdf>) <gasEccentricity203.pdf, id=168, 505.89pt x 722.7pt>
+File: gasEccentricity203.pdf Graphic file (type pdf)
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gamma' on input line 50.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 50.
-
-(C:\Users\phil\Documents\diskeccentricity.tex
-<diskeccentricity.pdf, id=71, 361.35pt x 252.945pt>
-File: diskeccentricity.pdf Graphic file (type pdf)
- <use diskeccentricity.pdf>) [2]
+<use gasEccentricity203.pdf> (./CVNRCollapse.tex
+<CVNRCollapse.pdf, id=170, 361.35pt x 252.945pt>
+File: CVNRCollapse.pdf Graphic file (type pdf)
+ <use CVNRCollapse.pdf>)
+[5 <./diskecc1D.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3 <C:/Users/phil/Documents/diskeccentricity.pdf>]
-(C:\Users\phil\Documents\Studienarbeit.aux)
+ [6 <./gasEccentricity203.pdf> <./CVNRCollapse.pdf>] (./diskmass.tex
+<diskmass.pdf, id=195, 361.35pt x 252.945pt>
+File: diskmass.pdf Graphic file (type pdf)
+ <use diskmass.pdf>) [7 <./diskmass.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 193.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gamma' on input line 193.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 193.
+
+(./binstar.tex <binstar.pdf, id=214, 361.35pt x 252.945pt>
+File: binstar.pdf Graphic file (type pdf)
+ <use binstar.pdf>)
+(./densityprofile.tex <densityprofile.pdf, id=215, 361.35pt x 252.945pt>
+File: densityprofile.pdf Graphic file (type pdf)
+
+<use densityprofile.pdf>) (./diskecccomparefargorh2d.tex
+<diskecccomparefargorh2d.pdf, id=216, 361.35pt x 252.945pt>
+File: diskecccomparefargorh2d.pdf Graphic file (type pdf)
+
+<use diskecccomparefargorh2d.pdf>) [8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./binstar.pdf> <./densityprofile.pdf>] (./RH2DNIRVANA.tex
+<RH2DNIRVANA.pdf, id=236, 361.35pt x 252.945pt>
+File: RH2DNIRVANA.pdf Graphic file (type pdf)
+ <use RH2DNIRVANA.pdf>) [10 <./diskecccomparefargorh2d.pdf>]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 264.
+
+<2000px-Lagrange_very_massive.png, id=246, 2007.5pt x 1669.23625pt>
+File: 2000px-Lagrange_very_massive.png Graphic file (type png)
+
+<use 2000px-Lagrange_very_massive.png> (./diskecclagrangecomp.tex
+<diskecclagrangecomp.pdf, id=248, 433.62pt x 201.75375pt>
+File: diskecclagrangecomp.pdf Graphic file (type pdf)
+
+<use diskecclagrangecomp.pdf>) [11 <./RH2DNIRVANA.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./diskecclagrangecompsamemass.tex
+<diskecclagrangecompsamemass.pdf, id=257, 433.62pt x 201.75375pt>
+File: diskecclagrangecompsamemass.pdf Graphic file (type pdf)
+
+<use diskecclagrangecompsamemass.pdf>)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12 <./2000px-Lagrange_very_massive.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 <./diskecclagrangecomp.pdf> <./diskecclagrangecompsamemass.pdf>]
+(./diskecclagrangehighlow.tex
+<diskecclagrangehighlow.pdf, id=277, 433.62pt x 201.75375pt>
+File: diskecclagrangehighlow.pdf Graphic file (type pdf)
+
+<use diskecclagrangehighlow.pdf>) [14
+
+ <./diskecclagrangehighlow.pdf>]
+(./diskeccentricityfith0052.tex
+<diskeccentricityfith0052.pdf, id=286, 433.62pt x 201.75375pt>
+File: diskeccentricityfith0052.pdf Graphic file (type pdf)
+
+<use diskeccentricityfith0052.pdf>) (./diskeccentricityfith005.tex
+<diskeccentricityfith005.pdf, id=287, 433.62pt x 201.75375pt>
+File: diskeccentricityfith005.pdf Graphic file (type pdf)
+
+<use diskeccentricityfith005.pdf>) (./diskeccentricityerrorsh005.tex
+<diskeccentricityerrorsh005.pdf, id=288, 433.62pt x 201.75375pt>
+File: diskeccentricityerrorsh005.pdf Graphic file (type pdf)
+
+<use diskeccentricityerrorsh005.pdf>)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15
+
+ <./diskeccentricityfith0052.pdf> <./diskeccentricityfith005.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16 <./diskeccentricityerrorsh005.pdf>] (./diskeccentricityfith0042.tex
+<diskeccentricityfith0042.pdf, id=308, 433.62pt x 201.75375pt>
+File: diskeccentricityfith0042.pdf Graphic file (type pdf)
+
+<use diskeccentricityfith0042.pdf>) (./diskeccentricityfith004.tex
+<diskeccentricityfith004.pdf, id=309, 433.62pt x 201.75375pt>
+File: diskeccentricityfith004.pdf Graphic file (type pdf)
+
+<use diskeccentricityfith004.pdf>) (./diskeccentricityerrorsh0042.tex
+<diskeccentricityerrorsh0042.pdf, id=310, 433.62pt x 201.75375pt>
+File: diskeccentricityerrorsh0042.pdf Graphic file (type pdf)
+
+<use diskeccentricityerrorsh0042.pdf>)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./diskeccentricityh003.tex
+<diskeccentricityh003.pdf, id=311, 361.35pt x 252.945pt>
+File: diskeccentricityh003.pdf Graphic file (type pdf)
+
+<use diskeccentricityh003.pdf>)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17
+
+ <./diskeccentricityfith0042.pdf> <./diskeccentricityfith004.pdf>] [18 <./diske
+ccentricityerrorsh0042.pdf> <./diskeccentricityh003.pdf>]
+(./diskperih005.tex <diskperih005.pdf, id=333, 433.62pt x 201.75375pt>
+File: diskperih005.pdf Graphic file (type pdf)
+
+<use diskperih005.pdf>) (./diskperiastronh005q01.tex
+<diskperiastronh005q01.pdf, id=334, 433.62pt x 201.75375pt>
+File: diskperiastronh005q01.pdf Graphic file (type pdf)
+
+<use diskperiastronh005q01.pdf>) (./diskperiastronh005q03.tex
+<diskperiastronh005q03.pdf, id=335, 433.62pt x 201.75375pt>
+File: diskperiastronh005q03.pdf Graphic file (type pdf)
+
+<use diskperiastronh005q03.pdf>)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./diskperiastronh005q04.tex
+<diskperiastronh005q04.pdf, id=336, 433.62pt x 201.75375pt>
+File: diskperiastronh005q04.pdf Graphic file (type pdf)
+
+<use diskperiastronh005q04.pdf>)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./diskperiastronh005q10.tex
+<diskperiastronh005q10.pdf, id=337, 433.62pt x 201.75375pt>
+File: diskperiastronh005q10.pdf Graphic file (type pdf)
+
+<use diskperiastronh005q10.pdf>)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19 <./diskperih005.pdf> <./diskperiastronh005q01.pdf>]
+
+LaTeX Warning: Text page 20 contains only floats.
+
+[20 <./diskperiastronh005q03.pdf> <./diskperiastronh005q04.pdf> <./diskperiastr
+onh005q10.pdf>] (./diskperih004.tex
+<diskperih004.pdf, id=361, 433.62pt x 201.75375pt>
+File: diskperih004.pdf Graphic file (type pdf)
+ <use diskperih004.pdf>)
+(./diskperiastronh004q01.tex
+<diskperiastronh004q01.pdf, id=362, 433.62pt x 201.75375pt>
+File: diskperiastronh004q01.pdf Graphic file (type pdf)
+
+<use diskperiastronh004q01.pdf>) (./diskperiastronh004q03.tex
+<diskperiastronh004q03.pdf, id=363, 433.62pt x 201.75375pt>
+File: diskperiastronh004q03.pdf Graphic file (type pdf)
+
+<use diskperiastronh004q03.pdf>)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./diskperiastronh004q06.tex
+<diskperiastronh004q06.pdf, id=364, 433.62pt x 201.75375pt>
+File: diskperiastronh004q06.pdf Graphic file (type pdf)
+
+<use diskperiastronh004q06.pdf>)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[21
+
+ <./diskperih004.pdf> <./diskperiastronh004q01.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22 <./diskperiastronh004q03.pdf> <./diskperiastronh004q06.pdf>]
+(./diskperiastronh004q07.tex
+<diskperiastronh004q07.pdf, id=385, 433.62pt x 201.75375pt>
+File: diskperiastronh004q07.pdf Graphic file (type pdf)
+
+<use diskperiastronh004q07.pdf>) (./diskperiastronh004q10.tex
+<diskperiastronh004q10.pdf, id=386, 433.62pt x 201.75375pt>
+File: diskperiastronh004q10.pdf Graphic file (type pdf)
+
+<use diskperiastronh004q10.pdf>) (./diskperiastronh003q01.tex
+<diskperiastronh003q01.pdf, id=387, 433.62pt x 201.75375pt>
+File: diskperiastronh003q01.pdf Graphic file (type pdf)
+
+<use diskperiastronh003q01.pdf>)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./diskperiastronh003q02.tex
+<diskperiastronh003q02.pdf, id=388, 433.62pt x 201.75375pt>
+File: diskperiastronh003q02.pdf Graphic file (type pdf)
+
+<use diskperiastronh003q02.pdf>)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./diskperiastronh003q09.tex
+<diskperiastronh003q09.pdf, id=389, 433.62pt x 201.75375pt>
+File: diskperiastronh003q09.pdf Graphic file (type pdf)
+
+<use diskperiastronh003q09.pdf>) [23
+
+ <./diskperiastronh004q07.pdf> <./diskperiastronh004q10.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24 <./diskperiastronh003q01.pdf> <./diskperiastronh003q02.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25 <./diskperiastronh003q09.pdf>] (./Studienarbeit.bbl (./Studienarbeit.brf)
+\tf@brf=\write5
+\openout5 = `Studienarbeit.brf'.
+
+
+
+LaTeX Font Warning: Font shape `T1/aess/m/sc' undefined
+(Font)              using `T1/aess/m/n' instead on input line 14.
+
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 26.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 26.
+(/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+[]\T1/aess/m/sc/10 (+20) Rein, Han-no:  \T1/aess/m/sl/10 (+20) A po-wer-ful scr
+ipt de-ve-lop-ped by Han-no Rein\T1/aess/m/sc/10 (+20) .  Ju-ly 2010. --
+ []
+
+) [26
+
+] (./Studienarbeit.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 14417 strings out of 495285
- 209720 string characters out of 3180397
- 353044 words of memory out of 3000000
- 17171 multiletter control sequences out of 15000+200000
- 37938 words of font info for 136 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 46i,11n,58p,346b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\phil\AppData\Local\MiKTeX\2.8\fonts\pk\ljfour\jknappen\ec\dpi600\t
-crm1000.pk><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb><C:/Program Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/P
-rogram Files/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program F
-iles/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiK
-TeX 2.8/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files/MiKTeX 2.8/
-fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on Studienarbeit.pdf (3 pages, 162546 bytes).
+ 14711 strings out of 493848
+ 214998 string characters out of 1152824
+ 352302 words of memory out of 3000000
+ 17143 multiletter control sequences out of 15000+50000
+ 60781 words of font info for 308 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 46i,16n,58p,941b,430s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
+nts/cm/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10
+.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/sh
+are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmss17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmss8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssbx10.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/
+share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfrm1000.pfb>
+Output written on Studienarbeit.pdf (26 pages, 3942288 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 19 named destinations out of 1000 (max. 500000)
- 27230 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 519 PDF objects out of 1000 (max. 8388607)
+ 97 named destinations out of 1000 (max. 500000)
+ 34654 words of extra memory for PDF output out of 35830 (max. 10000000)
 

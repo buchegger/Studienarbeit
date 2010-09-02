@@ -1,0 +1,165 @@
+
+\usepackage{ae}
+
+% Wir verwenden die neue deutsche Rechtschreibung (wir versuchen es zumindest ^^)
+\usepackage{ngerman}
+\usepackage[english,ngerman]{babel}
+
+% Wir mï¿½hten Grafiken verwenden und diese sollen als Ausgabetreiber pdfTex verwenden
+\usepackage[pdftex]{graphicx}
+
+% Keine Papierverschwendung wie es bei Tex-Standard blich ist
+\usepackage[bottom=30mm,top=25mm,inner=20mm,outer=20mm,marginparwidth=15mm,marginparsep=3mm,headsep=10mm]{geometry}
+
+% Die zusï¿½zlichen AMS-Mathepakete, und schï¿½ere Integralgrenzen
+\usepackage[intlimits]{amsmath}
+\usepackage{amsthm}
+\usepackage{amsopn}
+\usepackage{amscd}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%\usepackage{mathrsfs}
+
+% Einheitenbefehle \unit und \unitfrac
+\usepackage{units}
+
+% Schï¿½ere und flexiblere Kopfzeilen
+\usepackage{fancyhdr}
+
+% Ab und zu mï¿½hten wir Seiten im Querformat einbauen
+\usepackage{pdflscape}
+
+% Vorschau PDFs erstellen
+\usepackage{thumbpdf}
+
+% Type1-Fonts (damit die PDFs nicht so verpixeln)
+% Folgende Pakete sollten deshalb installiert sein:
+% Font-Packages: CTAN: fonts/cmbright/, CTAN: fonts/ps-type1/cm-super/, CTAN: fonts/ps-type1/hfbright/
+\usepackage{type1cm}
+
+% Komplette PDFs (oder Seiten daraus) importieren
+\usepackage{pdfpages}
+
+% If-Abfragen ermï¿½lichen
+\usepackage{ifthen}
+
+% Quellcodes schï¿½ darstellen
+\usepackage{verbatim}
+
+% Erweitere Quellcodedarstellung
+\usepackage{listings}
+
+% Verschiedene Pakete (was machten die nochmals?)
+\usepackage{titling}
+\usepackage{textcomp}
+\usepackage{nonfloat}
+\usepackage{booktabs}
+
+% Erweitere Aufzï¿½lungen
+\usepackage{eqlist}
+\usepackage{paralist}
+
+% Farbuntersttzung
+\usepackage{color}
+
+% PDF spezifische Funktionen
+\usepackage[a4paper,breaklinks,unicode,colorlinks,linktocpage,pdftex,linkcolor=blue,urlcolor=blue,backref,pagebackref,bookmarks,bookmarksnumbered]{hyperref}
+
+% dsfont
+\usepackage{multicol,wasysym,expdlist}
+
+% kleine Layoutfehler fixen
+\usepackage{ellipsis,fixltx2e,mparhack}
+
+\usepackage{microtype}
+
+% absolute Textpositionierung
+\usepackage{textpos}
+
+% Indexerstellung
+\usepackage{makeidx}
+\usepackage{booktabs}
+
+% Immer Serifenlos schreiben
+\renewcommand{\familydefault}{\sfdefault}
+
+% Abs�ze nicht einrcken
+\setlength{\parindent}{0em}
+
+% Titel, Autor, Datum konfigurieren (fr Titelseite)
+\title{ \textbf{\Titel} \\ \Thema}
+\ifthenelse{ \equal{\Gruppe}{} }{ \author{\Autoren} }{ \author{\Autoren \\ \Gruppe}}
+\date{\Datum}
+
+% PDF Informationen
+\hypersetup{
+  pdftitle=\Titel,
+  pdfsubject=\Thema,
+  pdfauthor=\Autoren,
+  pdfkeywords=\Schluesselwoerter,
+  pdfcreator={LaTeX},
+  pdfproducer={LaTeX}
+  %pdfpagemode=None
+  %pdfpagelayout=Singlepage  (keine Lesezeichen)
+}
+
+\fancypagestyle{plain}{%
+}
+
+% C++ Layout fuer Quellcodes importieren
+\lstloadlanguages{c++}
+
+\begin{document}
+\definecolor{Gray}{gray}{0.5}
+
+% Farben und Quellcodedefinitionen fr die sch�e Darstellung von LISP/Scheme
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.6,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\definecolor{red}{rgb}{.98,0,0}
+%
+\lstset{
+  numbers=left,
+  numberblanklines=false,
+  showspaces=false,
+  showstringspaces=false,
+  numberstyle=\tiny,
+  language=C++,
+  inputencoding=utf8,
+  extendedchars=true,
+  basicstyle=\ttfamily,
+  commentstyle=\itshape\color{Gray},
+  keywordstyle=\bfseries\color{darkblue},
+  directivestyle=\color{darkgreen},
+  stringstyle=\color{darkred},
+  breaklines,
+  postbreak=\space,
+  breakindent=5pt,
+  tabsize=8}
+
+% normalerweise mit Buchstaben a), b) aufz�len
+\renewcommand{\labelenumi}{\alph{enumi})}
+
+% keine Nummerierung der �erschriften
+\setcounter{secnumdepth}{0}
+
+% etwas kleinere Formelabst�de
+\setlength{\jot}{6pt}
+
+% Seitenlayout mit Kopfzeilen definieren
+\pagestyle{fancy}
+\rhead{\today}
+\chead{}
+\lhead{\textbf{\Titel} \\ \Thema}
+\lfoot{\Autoren}
+\cfoot{}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headheight}{25.pt}
+
+% Titelseite erstellen
+\maketitle
+
+% Und etwas Platz darunter lassen
+\vspace{1em}

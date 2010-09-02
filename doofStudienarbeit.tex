@@ -1,0 +1,397 @@
+\documentclass[a4paper,pdftex,oneside,10pt,mathsans]{scrartcl} %,fleqn
+
+% Wir geben alles im UTF-8 Zeichensatz ein (alles andere ist Unfug!)
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{ngerman}
+
+\newcommand{\Autoren}{\href{buchegger.uni@gmail.com}{Philipp Buchegger}}
+
+\newcommand{\Gruppe}{Studenarbeit}
+\newcommand{\Thema}{CPT Uni Tübingen}
+\newcommand{\Titel}{Scheibendynamik in Binärsternsystemen mit FARGO}
+\newcommand{\Datum}{Tübingen, den \today}
+\newcommand{\Schluesselwoerter}{}
+
+\input{HeaderUTF8.tex}
+
+\setlength{\baselineskip}{1.25\baselineskip}
+\setlength{\parskip}{\baselineskip}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+\setlength{\plitemsep}{0.3\baselineskip}
+
+\setlength{\abovedisplayskip}{0.5\baselineskip}
+\setlength{\abovedisplayshortskip}{0pt}
+\setlength{\belowdisplayskip}{0.5\baselineskip}
+\setlength{\belowdisplayshortskip}{0.5\baselineskip}
+
+\newcommand{\super}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\sub}[1]{\ensuremath{_{\textnormal{#1}}}}
+
+\newcommand{\e}{\mathrm e}
+
+\tableofcontents 
+\section{Einleitung}
+Wie ist unsere Erde entstanden? TODO blabla
+Ein vielversprechendes Modell daf�r sind Akkretionsscheiben. Um gen�gend starke St�rungen zu haben, ist ein Bin�rstern ein gutes Mittel
+
+\section{FARGO}
+\begin{itemize}
+\item loest die Navier-Stokes-Gleichung und Kontinuitaetsgleichung fuer eine Keplersche Disk um den Zentralstern, sowie fuer umlaufende Planeten
+\item Isotherme Zustandsgleichung mit frei waehlbarer Temperatur oder Schallgeschwindigkeit
+\item 2D Polargitter Hydrocode
+\item van Leer upwind Algorithmus auf einem staggered mesh
+\item frei waehlbare Anzahl an Planeten bzw. jetzt Sternen
+\item FARGO-Algorithmus (Fast Advection in Rotating Gaseous Objects)
+\item OpenMP und MPI parallelisiert
+\end{itemize}
+\subsection{FARGO-Modifikationen}
+
+\subsubsection{FARGO-Erweiterung: Planet-Eccentricity und Sterne als Sekundaerobjekte}
+TODO planeten -> Sterne
+Anstatt einer globalen Exzentrizität aller Sekundaerobjekte kann man in der Konfigurationsdatei die Exzentrizität eines jeden Sekundaerobjekts bzw angeben. Die Planeten/Binärsterne starten in der Apoapsis, also dem Punkt mit der größten Entfernung zum Hauptkörper. Davor konnte man die Exzentrizitaet nur global festlegen. Beim Initiaisieren einer Rechnung sieht man bei einem Sekundaerobjekt:
+
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\#  &  name & mass [m0]  & x [l0] & y [l0] & vx & vy & e  & a & T [t0] & T [a] & accreting  & feels disk & feels plan.\\\hline
+0 & Star & 1 & 1 & 0 & 0 & 1.41 & 2.22e-16 & 1 & 4.44 & 0.707 & 0 & - & -\\\hline
+\end{tabular}
+
+Wie wir hier sehen kann man anstatt von Planeten auch Sterne eintragen. Das fuehrt zu einigen Modifikationen, da Binaersterne sich nicht in der Scheibe aufhalten und man somit Potential Smoothing bzw. weglassen kann, mehr dazu spaeter.
+
+Bisher ist der Stern auf einer festen Bahn und spuert keine Kraefte der Scheibe. Das kann aber genau so wie die Wechselwirkung von Sternen und Planeten untereinander auch aktiviert werden. Die Entwicklung der Bahn der Planeten bzw. Sterne kann in der Datei 'planet0.dat' beobachtet werden.
+
+\subsubsection{FARGO-Erweiterung: Disk-Eccentricity}
+Um die Exzentrizitaet einer Disk zu berechnen, wird jede einzelne Gitterzelle als Planet eines Zweikoerperproblemes angesehen. Dazu wird der Drehimpuls
+\begin{align}
+\vec{L}=\vec{r}\times\vec{p}
+\end{align}
+bestimmt, womit man ueber den Laplace-Runge-Lenz-Vektor
+\begin{align}
+\vec{A}=\vec{p}\times\vec{L}-m\alpha\frac{\vec{r}}{r}
+\end{align}
+auf die Exzentrizitaet kommt:
+\begin{align}
+\epsilon=\frac{A}{m\alpha}
+\end{align}
+Um auf eine repraesentative Groesse fuer die gesamte Scheibe zu kommen, wird die Exzentrizitaet jeder einzelnen Zelle mit ihrer Masse gewichtet. Die Masse wird aus der Oberflaechendichte mal der Oberflaeche berechnet.
+
+Es laesst sich aber auch die Exzentrizitaet aller Zellen ausgeben, sowie deren 1D-Profil. Die Exzentrizitaet der gesamten Disk wird fuer jeden Zeitschritt in der Datei 'disk\_quantities.dat' abgespeichert.
+\begin {figure}
+	\begin{center}
+		\input{diskecc1D}
+	\end{center}
+\caption{1D-Profil der Exzentrizitaet einer Disk nach einem Binary Orbit}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\includegraphics[scale=0.5,angle=270]{gasEccentricity203}
+	\end{center}
+\caption{2D-Profil der Exzentrizitaet einer Disk nach einem Binary Orbit}
+\end {figure}
+
+\subsection{CVNR}
+Der FARGO-Code hat eine künstliche Viskosität in den Druck-Quelltermen. Um einen Vergleich mit RH2D und NIRVANA durchführen zu können, kann man jetzt die künstliche Viskosität in der Variable CVNR konfigurieren. Der Standardwert ist 1.41. Wenn man Rechnungen ohne kuenstliche Viskositaet durchfuehrt, kommt es in der Scheibe oft zu hohen Geschwindigkeiten einzelner Zellen. Dies kann zu einem Kollaps der Exzentrizitaet der Scheibe fuehren. Nach einer Weile erholt sich die Scheibe zwar wieder, doch macht das physikalisch einfach keinen Sinn:
+\begin {figure}
+	\begin{center}
+		\input{CVNRCollapse}
+	\end{center}
+\caption{Ohne kuenstliche Viskositaet werden Zellen am Rand der Disk sehr schnell und bringen die Disk zum kollabieren.}
+\end {figure}
+
+
+Wenn man dieselbe Rechnung mit CVNR = 1.41 berechnet, hat man anfangs dieselbe Steigung und den Selben Endwert, aber nicht den starken Abfall dazwischen.
+\subsection{Boundary-Conditions}
+FARGO hat folgende Randbedingungen implementiert:
+\begin{itemize}
+\item Open:
+Bei offenen Randbedingungen geht sehr viel Masse verloren:
+\begin {figure}
+	\begin{center}
+		\input{diskmass}
+	\end{center}
+\caption{Masseverlust der Disk: Nach dem ersten Binaersternorbit geht der Grossteil der Masse verloren.}
+\end {figure}
+\item Reflecting
+\item Non-Reflecting, Evanescent haben wir nicht verwendet.
+\end{itemize}
+\section{Potential-Smoothing}
+Wenn sich ein Planet in der Akkretionsscheibe befindet, so wird sein Potential mit $\frac{1}{(r+\epsilon)^2}$ geglaettet.
+Wenn wir eine Akkretionsscheibe in einem Binärsternsystem betrachten, müssen wir, um sinnvolle Ergebnisse zu erhalten, den Binärstern anders betrachten als einen Planeten: Die Entfernung eines Planeten ist viel geringer. Bei Binaersternen macht also Potential-Smoothing keinen Sinn. Hier hilft man sich, indem man das Thicknesssmoothing auf z.B. $\epsilon=10^-{9}$ setzt und somit die Abfrage fuer das Roche-Smoothing umgeht.
+\section{Modellierung exzentrischer Binaersternsysteme}
+Die exzentrische Bahn des Binaersterns stoert und veraendert die Disk signifikant! Durch hohe Exzentrizitaeten fliegt der Stern im Periastron sehr nah an der Disk vorbei und setzt sie somit bei jedem Binary Orbit grossen Kraeften aus. Dies fuehrt offensichtlich bei jedem Binary Orbit zu einer starken Aenderung der Exzentrizitaet. Doch was passiert, wenn man sich eine groessere Zeitspanne und somit mehrere Binary Orbits ansieht? Das wollen wir im Folgenden herausfinden.
+\subsection{$\gamma$ Cep}
+Physikalische Parameter:
+
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline$M_1$ & $M_2$ & a & e & $M_p$ & $a_p$ & $e_p$\\\hline
+1.59 & 0.378 & 18.5 & 0.36 & 1.70 & 2.13 & 0.20\\\hline
+\end{tabular}
+
+
+Diese physikalischen Parameter kann man nicht immer direkt in FARGO uebertragen: FARGO verwendet als Masse fuer den Primaerstern immer 1, also muss man die Masse des Binaersterns entsprechend skalieren: $M_1 = 1.0 ; M_2 = 0.2378$. Wir beruecksichtigen hier keine Wechselwirkung des Binaersterns mit der Scheibe, d.h. der Binaerstern ist auf seiner festen Bahn. Mittels der config File fuer die Planeten kann man auch Wechselwirkung mit der Disk und anderen Planeten einschalten, das ist aber noch nicht getestet worden. Genau so mit Vorsicht muss man die Code-Zeit betrachten. Nur mit dem richtigen Umrechenfaktor ergibt sich die korrekte Zeit fuer die Orbits. Bei einem Orbit von 1 $\unit{AU}$ ist der Faktor z.B. $0.126212$
+\begin {figure}
+	\begin{center}
+		\input{binstar}
+	\end{center}
+\caption{Der Binaerstern umrundet den Primaerstern auf seiner festen Umlaufbahn. Um die Fehler der Bewegung zu ueberpruefen, wird die zuvor angegebene Exzentrizitaet anhand der Bewegung berechnet.}
+\end {figure}
+
+Um erste Tests und einen Vergleich mit Kleys RH2D durchzufuehren, wurde das Setup von $\gamma$ Cep verwendet. Es werden die Dichteprofile, Exzentrizitaetsprofile nach einigen Binaerorbits untersucht.
+\begin {figure}
+	\begin{center}
+		\input{densityprofile}
+	\end{center}
+\caption{Die Entwicklung des Dichteprofils ist analog zu Kley/Nelson}
+TODO: exentrizitaetsprofil
+\end {figure}
+
+Die zeitliche Entwicklung der Exzentrizitaet der Scheibe von $\gamma$ Cep geht auch in Einklang mit Kleys Ergebnissen.
+
+\begin {figure}
+	\begin{center}
+		\input{diskecccomparefargorh2d}
+	\end{center}
+\caption{Anfangs schwingt FARGO etwas staerker, der spaetere Verlauf ist aber identisch}
+\end {figure}
+
+\clearpage
+\section{Marzari Paper}
+Setup:
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline$M_1$ & $M_2$ & a & e & Rmin & Rmax & $e_p$\\\hline
+1.0 & 0.4 & 30 & 0.4 & 0.5 & 15 & 0.20\\\hline
+\end{tabular}
+
+
+256x512 logarithmic Grid, Nonreflecting/Nonreflecting Randbedingungen
+\section{Vergleich FARGO, Nirvana und RH2D}
+\begin {figure}
+	\begin{center}
+		\input{RH2DNIRVANA}
+	\end{center}
+\caption{Alle 3 Codes aehneln sich bei der Exzentrizitaet, jedoch oszilliert FARGO nicht wie RH2D, nachdem die maximale Exzentrizitaet erreicht, und somit die Disk eingeschwungen ist. FARGO verhaelt sich in diesem Fall eher wie NIRVANA, auch wenn der Anstieg etwas steiler und das Maximum hoeher ist. Durch den exponentiellen Anstieg auf einen gewissen Wert der Exzentrizitaet sieht man, dass es sich um einen nichtexzentrischen Binaerstern handeln muss.
+TODO: Setup von CVDisk}
+\end {figure}
+
+\section{Modellierung nicht-exzentrischer Binaersternsysteme: Parameterstudie: h, q}
+Nun wollen wir betrachten, wie sich Scheiben verhalten, wenn der Binaerstern sich auf einer Kreisbahn um die Scheibe und den Primaerstern bewegt. Im Gegensatz zu einer exzentrischen Bahn sollte hier die Exzentrizitaet der Scheibe einen Endzustand erreichen. Wir gehen davon aus, dass die Exzentrizitaet mit einem exponentiellen Wachstum erreicht wird und diesen Wert dann beibehaelt. Wenn sich die Exzentrizitaet, nachdem sie ihr Maximum erreicht hat, langsam weiter veraendert, ist davon auszugehen, dass dies durch numerische Fehler bzw. den Code passiert.
+Wir variieren die Parameter Aspectratio H/r, also die Dicke der Disk und den Parameter MassRatio q, das Massenverhältnis des Binärsterns zu dem Primärstern. 
+
+Setup:
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline$M_1 [\unit{\astrosun}]$ & $M_2$ [\unit{\astrosun}] & $\frac{H}{r}$ & a [$\unit{AU}$] & e \\\hline
+1.0 & 0.1 - 1.0 & 0.03 - 0.05 & 1.0 & 0.0 \\\hline
+\end{tabular}
+
+Ziel ist es, die Wachstumsrate, sowie den Wert der Exzentrizität der Scheibe zu bestimmen. Als Randbedingungen verwenden wir innen reflektierende und aussen offene.
+Wir betrachten auch die Präzession der Disk.
+
+Probleme traten auf, wenn die kuenstliche Viskositaet nach von Neumann Richtmyer nicht aktiviert war. Dann werden die Berechnungszeitschritte extrem klein, die Rechnungen dauerten also ewig. Dazu gibt es partiell extrem hohe Geschwindigkeiten einzelner Zellen, was zu Exzentrizitaeten von weit ueber 1 fuehrt. Danach kollabiert die Exzentrizitaet der gesamten Scheibe auf 0 und steigt langsam wieder an. Der am Ende erreichte Wert entspricht den Ergebnissen mit CVNR, jedoch ist die Growth Rate anders.
+
+\subsubsection{Lagrange-Punkte}
+Fuer verschiedene Massenverhaeltnisse des Primaer- und Binaer-Sterns muss man verschiedene Scheibenradien waehlen, da der Maximalradius der Scheibe nur bis zu dem Lagrangepunkt $L_1$ Sinn macht. Der Lagrangepunkt $L_1$ ist der Punkt im Raum, in dem sich ein kleiner Körper (eine Zelle unserer Scheibe) im Gravitationsfeld von 2 großen Körpern (Primaer- und Binaerstern) in relativer Ruhe zu den beiden Körpern befindet. Bei verschiedenen Massen haben wir also verschiedene Lagrangepunkte. Der Lagrangepunkt befindet sich auf der Verbindungsgeraden des Primaer- und des Binaersterns. Wir waehlen als Maximalradius der Scheibe die jeweiligen Lagrangepunkte. Wenn wir die Scheibe also groesse machen wuerden, haetten wir sofort einen grossen Masseverlust. Um das Groessenverhaeltnis der Scheibe gleich zu halten, passen wir den Minimalradius jeder Disk an unser Ausgangsverhaeltnis von $\frac{0.7}{0.05}$ an.
+\begin {figure}
+	\includegraphics[scale=0.1]{2000px-Lagrange_very_massive.png}
+\caption{Lagrange-Punkte: Sie lassen sich rechnerisch herleiten, wenn man die drei Massen auf einer Linie anordnet und für die Rotation um den gemeinsamen Schwerpunkt die Summe der Kräfte aus der Zentrifugalwirkung der Rotation um den gemeinsamen Schwerpunkt und aus der graviativen Anziehung untereinander zu Null setzt.}
+\end {figure}
+
+\begin{tabular}{|c|c|c|}
+\hline q & Rmin [$\unit{AU}$] & Rmax [$\unit{AU}$]\\\hline
+0.1	& 0.7175 & 0.05125\\\hline
+0.2	& 0.6585 & 0.0470\\\hline
+0.3	& 0.62087 & 0.0443\\\hline
+0.4	& 0.0424 & 0.5929\\\hline
+0.5	& 0.0407 & 0.5708\\\hline
+0.6	& 0.0395 & 0.5523\\\hline
+0.7	& 0.0383 & 0.5366\\\hline
+0.8	& 0.03735 & 0.5229\\\hline
+0.9	& 0.0365 & 0.5108\\\hline
+1.0	& 0.0357 & 0.5\\\hline
+\end{tabular}
+
+
+
+
+
+
+\begin {figure}
+	\begin{center}
+		\input{diskeccentricityh005}
+	\end{center}
+\caption{Der schnellste Anstieg der Exzentrizitaet ist bei $q = 0.3$ und $q = 0.4$}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskeccentricityh004}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskeccentricityh003}
+	\end{center}
+\end {figure}
+
+\subsection{Periastron}
+\subsubsection{h = 0.05}
+\clearpage
+\begin {figure}
+	\begin{center}
+		\input{diskperih005}
+	\end{center}
+	\caption{Mit zunehmendem MassRatio praezediert die Disk schneller}
+\end {figure}
+
+\clearpage
+\begin {figure}
+	\begin{center}
+		\input{diskgrowthrateh005}
+	\end{center}
+	\caption{Die Exzentrizitaet steigt am schnellsten bei q = 0.4 an. Die Growth Rate entspricht der linearen Steigung bei einem logarithmischen Plot der zeitlichen Entwicklung der Exzentrizitaet. Da aber alle Growth Rates sehr nahe beieinander sind und der lineare Teil Ermessenssache ist, sollte man diesen Plot mit Vorsicht betrachten!}
+\end {figure}
+
+
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh005q01}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh005q02}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh005q03}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh005q04}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh005q05}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh005q06}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh005q07}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh005q08}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh005q09}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh005q10}
+	\end{center}
+\end {figure}
+
+\subsubsection{h = 0.04}
+\begin {figure}
+	\begin{center}
+		\input{diskperih004}
+	\end{center}
+	\caption{Mit zunehmendem MassRatio praezediert die Disk schneller}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh004q01}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh004q02}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh004q03}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh004q04}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh004q05}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh004q06}
+	\end{center}
+\end {figure}
+\clearpage
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh004q07}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh004q08}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh004q09}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh004q10}
+	\end{center}
+\end {figure}
+
+
+\subsubsection{h = 0.03}
+Bei einem h von 0.03 konnte nicht fuer alle MassRatios ein Gleichgewichtszustand der Exzentrizitaet erreicht werden. Ab einem Wert von q=0.5 sind die Disks nicht mehr exzentrisch, somit schwingt das Periastron um 0. Fuer kleinere Werte von q ist die Einschwingzeit recht lange, nur fuer q= 0.3 und q=0.4 sieht die Kurve gut aus.
+
+
+sadfasdfafas
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh003q01}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh003q02}
+	\end{center}
+\end {figure}
+
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh003q09}
+	\end{center}
+\end {figure}
+\begin {figure}
+	\begin{center}
+		\input{diskperiastronh003q10}
+	\end{center}
+\end {figure}
+
+\end{document}
+
